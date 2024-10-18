@@ -9,6 +9,7 @@ Edge web browser <br>
 (You use can ChatGPT to modify the code for your web browser)
 
 ## Usage:
+(After cloning the repo to your pc. )
 ### 1. Open login.py in a text editor
 
 Replace "id" & "password" with your username/id and password.
