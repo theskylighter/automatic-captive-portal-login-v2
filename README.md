@@ -6,8 +6,6 @@ NOTE : Works in  <b>Windows</b> only for now
 ## Pre-Requisites:
 Selenium library for Python (install using `$ pip install selenium`)<br>
 Edge web browser <br>
-Selenium library for Python (install using `$ pip install selenium`)<br>
-Edge web browser <br>
 (You use can ChatGPT to modify the code for your web browser)
 
 ## Usage:
