@@ -2,10 +2,11 @@
 A small python script to automatically login to the captive portal in the MNIT J's internet login portal.
 
 NOTE : Works in  <b>Windows</b> only for now.
+NOTE : Works in  <b>Windows</b> only for now.
 
 ## Pre-Requisites:
-<ol>Selenium library for Python (install using `$ pip install selenium`)</ol> 
-<ol>Edge web browser </ol>
+Selenium library for Python (install using `$ pip install selenium`)<br>
+Edge web browser <br>
 (You use can ChatGPT to modify the code for your web browser)
 
 ## Usage:
@@ -24,7 +25,12 @@ Save and exit.
 
 ### NOTE: To Find out the path to your python executable
 Type `python -c "import sys; print(sys.executable)"` in your cmd / powershell 
+### NOTE: To Find out the path to your python executable
+Type `python -c "import sys; print(sys.executable)"` in your cmd / powershell 
 
+
+### Enjoy !!
+Now whenever you want to log-on, double click autologin.bat  
 
 ### Enjoy !!
 Now whenever you want to log-on, double click autologin.bat  
@@ -33,6 +39,7 @@ Now whenever you want to log-on, double click autologin.bat
 
 
 
+## Steps to Further Automate Your Batch File Using Task Scheduler
 ## Steps to Further Automate Your Batch File Using Task Scheduler
 You can automate the batch file execution at 12 AM using Task Scheduler on Windows. This way, the batch file will run automatically without needing manual intervention.
 
