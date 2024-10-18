@@ -24,28 +24,19 @@ Save and exit.
 
 ### NOTE: To Find out the path to your python executable
 Type `python -c "import sys; print(sys.executable)"` in your cmd / powershell 
-### NOTE: To Find out the path to your python executable
-Type `python -c "import sys; print(sys.executable)"` in your cmd / powershell 
-### NOTE: To Find out the path to your python executable
-Type `python -c "import sys; print(sys.executable)"` in your cmd / powershell 
 
 
 ### Enjoy !!
 Now whenever you want to log-on, double click autologin.bat  
 
-### Enjoy !!
-Now whenever you want to log-on, double click autologin.bat  
 
-### Enjoy !!
-Now whenever you want to log-on, double click autologin.bat  
 
 
 
 
 
 ## Steps to Further Automate Your Batch File Using Task Scheduler
-## Steps to Further Automate Your Batch File Using Task Scheduler
-## Steps to Further Automate Your Batch File Using Task Scheduler
+
 You can automate the batch file execution at 12 AM using Task Scheduler on Windows. This way, the batch file will run automatically without needing manual intervention.
 
 ### 1. Create a Task in Task Scheduler:
