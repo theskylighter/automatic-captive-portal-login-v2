@@ -1,2 +1,2 @@
 @echo off
-"C:\pathTo\python.exe" "pathTo\login.py"
+"pathTo\python.exe" "pathTo\login.py"
