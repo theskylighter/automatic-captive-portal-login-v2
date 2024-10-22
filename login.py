@@ -59,8 +59,8 @@ def main():
             login_to_network()
             break  # Exit the loop once logged in
         else:
-            print("Network still up, checking again in 15 seconds...")
-        time.sleep(15)  # Wait for 15 seconds before checking again
+            print("Network still up, checking again in 1 seconds...")
+        time.sleep(1)  # Wait for 1 seconds before checking again
 
 if __name__ == "__main__":
     main()
