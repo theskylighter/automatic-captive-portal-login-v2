@@ -58,8 +58,13 @@ You can automate the batch file execution at 12 AM using Task Scheduler on Windo
 
 - Go to the **Triggers** tab and click **New**.
 - Set **Begin the task** to **On a schedule**.
-- Choose **Daily** and set the **Start time** to `12:00 AM`.
+- Choose **Daily** and set the **Start time** to `12:00 AM`. (12:01 AM Preferred)
 - Click **OK**.
+
+(optional) Trigger 2
+- Go to the **Triggers** tab and click **New**.
+- Set **Begin the task** to **At start up**.
+- Tick box Stop task id it runs longer than -10 min 
 
 ### 4. Actions (Run the batch file):
 
