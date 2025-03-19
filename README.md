@@ -2,7 +2,7 @@
 
 A simple Python script to automatically log in to the captive portal for MNIT Jaipur's internet service using HTTP requests and network monitoring.
 
-**NOTE :** `.bat` files are windows specific. For linux/mac users, you can use crontab to schedule the script to run at a specific time.
+**NOTE :** `.bat` files are windows specific. For linux/mac users, you can use crontab to schedule the python script to run at a specific time.
 
 ## Pre-Requisites:
 - Python 3.x installed on your machine.
