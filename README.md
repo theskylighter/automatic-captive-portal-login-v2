@@ -1,40 +1,43 @@
 # Captive-Portal-Auto-Login
 
-A small Python script to automatically log in to the captive portal for MNIT Jaipur's internet service.
+A simple Python script to automatically log in to the captive portal for MNIT Jaipur's internet service using HTTP requests and network monitoring.
 
-**NOTE:** Works on Windows only for now.
+**NOTE :** `.bat` files are windows specific. For linux/mac users, you can use crontab to schedule the script to run at a specific time.
 
 ## Pre-Requisites:
-- Python 3.x installed on your machine
-- Selenium library for Python (Install using: `pip install selenium`)
-- Microsoft Edge web browser (Currently, the script is configured for Edge, but it can be modified for other browsers)
+- Python 3.x installed on your machine.
+- Python package: `requests` (Install using: `pip install requests`)
 
-*(Optional)* Modify the script for your preferred web browser (use ChatGPT for help if needed)
-
-## Usage:
+## Setup Instructions:
 
 1. Clone the repository to your local machine.
-2. Open `login.py` in a text editor and Replace the `"id"` and `"password"` placeholders with your actual campus network login credentials.
+2. Open `login.py` in a text editor and replace the placeholder credentials with your actual campus network login details. For example:
     ```python
-    id = 2023UAB1234
-    password = 12345678 
+    USERNAME = "your_username"
+    PASSWORD = "your_password"
     ```
-
 3. Open `autologin.bat` in a text editor.
-4. Replace `"pathto/python.exe"` with the path to your Python interpreter. Example:
+4. Replace `"pathTo\python.exe"` with the full path to your Python interpreter. Example:
     ```
     "C:/Users/YourUsername/AppData/Local/Programs/Python/Python39/python.exe"
     ```
-5. Replace `"pathto/login.py"` with the path to `login.py` on your system. Example:
+    or just write
+    ```python3```
+
+5. Replace `"pathTo\login.py"` with the full path to the `login.py` script on your system. For example:
     ```
-    "D:/codes/GIT Clones/Captive-Portal-Auto-Login/login.py"
+    "D:/codes/captive-LOGIN/automatic-captive-portal-login-v2/login.py"
     ```
-6. Save and close the files.
-    
-Note: To find the path to your Python executable, run the following command in your Command Prompt or PowerShell:
-    ```
-    where python
-    ```
+6. Save the files.
+
+## How It Works:
+
+- The script continuously monitors your network connectivity by pinging Google's DNS server (8.8.8.8).
+- When the network is detected as down, it sends a POST request to the captive portal login URL with your provided credentials.
+- If the login is successful, the script exits; otherwise, it retries after a short delay.
+  
+**MAC/Linux Note:**  
+The current network check in `login.py` uses the Windows-specific ping flag `-n`. If you wish to run this script on macOS or Linux, update the `is_network_down()` function to use the `-c` flag instead of `-n`.
 
 ### Enjoy!
 Now, whenever you need to log in, just double-click `autologin.bat` or rely on Task Scheduler for automated login.
@@ -112,7 +115,4 @@ To find the path to your Python executable, open your Command Prompt or PowerShe
 
 This will output the exact path where Python is installed on your machine.
 
-### 3. Can I modify the script for a browser other than Edge?
-Yes, you can modify the script to work with other browsers like Chrome or Firefox. You will need to change the WebDriver setup in the `login.py` file. 
 
-For example, if you want to use Chrome, replace the Edge WebDriver setup with the Chrome WebDriver, and ensure you have the appropriate WebDriver installed. If you're unsure how to do this, you can ask for help or look up WebDriver documentation for your chosen browser.
